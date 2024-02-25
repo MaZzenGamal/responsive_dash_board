@@ -6,6 +6,10 @@ class DashboardDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomDrawer();
+    return const Row(
+      children: [
+        Expanded(child: CustomDrawer()),
+      ],
+    );
   }
 }
